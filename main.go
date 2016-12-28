@@ -87,6 +87,8 @@ func SpidePage(siteStruct *model.Site, url1 string) {
 	if _, b := map2[url1]; b {
 		return
 	}
+	log.Println("spidering " + url1)
+	map2[url1] = true
 
 	content, err := Get(url1)
 	if err != nil {
@@ -119,15 +121,14 @@ func SpidePage(siteStruct *model.Site, url1 string) {
 			// 	return
 			// }
 			//_ = content
-			log.Println("spidering " + a)
+			//log.Println("spidering " + a)
 			//StorePage(siteStruct, urlStructTemp, content)
 			StoreContentUrl(siteStruct, a)
 
-			map2[url1] = true
 			time.Sleep(time.Millisecond * 10)
 			SpidePage(siteStruct, a)
 		} else {
-			log.Printf("none current url " + site + " " + a)
+			//log.Printf("none current url " + site + " " + a)
 		}
 	})
 
