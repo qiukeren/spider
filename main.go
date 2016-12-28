@@ -37,7 +37,7 @@ func main() {
 	log.SetFlags(log.Lshortfile | log.Ltime | log.Ldate)
 	var err error
 	db, err = gorm.Open("sqlite3", "spider.db")
-	// db.LogMode(true)
+	db.LogMode(false)
 	if err != nil {
 		panic("failed to connect database")
 	}
@@ -86,7 +86,6 @@ func SpidePage(siteStruct *model.Site, url1 string) {
 	if _, b := map2[url1]; b {
 		return
 	}
-	log.Println("spidering " + url1)
 	map2[url1] = true
 
 	content, err := Get(url1)
@@ -94,6 +93,7 @@ func SpidePage(siteStruct *model.Site, url1 string) {
 		log.Println(err)
 		return
 	}
+	log.Println("spidering " + url1)
 	StoreContent(siteStruct, url1, content)
 
 	reader := bytes.NewReader(content)
