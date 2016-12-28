@@ -1,0 +1,31 @@
+{
+	"comment": "",
+	"ignore": "",
+	"package": [
+		{
+			"checksumSHA1": "Ug69f91sZPzhcQatn0EQKiAaycU=",
+			"path": "github.com/MouseSun/goprint",
+			"revision": "021ff5db31c272101d884000ad25d6ccd7a436e2",
+			"revisionTime": "2015-09-25T05:34:33Z"
+		},
+		{
+			"checksumSHA1": "7qa/zuCTBkOULrc/7X8vMVQbkcI=",
+			"path": "github.com/PuerkitoBio/goquery",
+			"revision": "152b1a2c8f5d0340f658bb656032a39b94e52958",
+			"revisionTime": "2016-08-31T16:22:11Z"
+		},
+		{
+			"checksumSHA1": "3ehsf4ICoNBKw96NsC9TsHHUdAo=",
+			"path": "github.com/jinzhu/gorm",
+			"revision": "0fbff1e8f0821fc67ef793a9f403beda5ca372b8",
+			"revisionTime": "2016-12-20T10:27:27Z"
+		},
+		{
+			"checksumSHA1": "XGlyfQkJLFTrSpbyO1F74Mum7s0=",
+			"path": "github.com/mattn/go-sqlite3",
+			"revision": "e118d4451349065b8e7ce0f0af32e033995363f8",
+			"revisionTime": "2016-07-15T13:38:49Z"
+		}
+	],
+	"rootPath": "github.com/qiukeren/spider"
+}
