@@ -55,6 +55,24 @@
 			"path": "github.com/mattn/go-sqlite3",
 			"revision": "e118d4451349065b8e7ce0f0af32e033995363f8",
 			"revisionTime": "2016-07-15T13:38:49Z"
+		},
+		{
+			"checksumSHA1": "Tgu4aZokVOcn5MgZQbPauSBNVLw=",
+			"path": "golang.org/x/crypto/md4",
+			"revision": "ede567c8e044a5913dad1d1af3696d9da953104c",
+			"revisionTime": "2016-11-04T19:41:44Z"
+		},
+		{
+			"checksumSHA1": "dcOJtT2YpM6/qNQUa+IGGjFUy0k=",
+			"path": "golang.org/x/net/html",
+			"revision": "4971afdc2f162e82d185353533d3cf16188a9f4e",
+			"revisionTime": "2016-11-15T21:05:04Z"
+		},
+		{
+			"checksumSHA1": "BBN+OcVpSYnOYWdUq9A952+dCZA=",
+			"path": "golang.org/x/net/html/atom",
+			"revision": "4971afdc2f162e82d185353533d3cf16188a9f4e",
+			"revisionTime": "2016-11-15T21:05:04Z"
 		}
 	],
 	"rootPath": "github.com/qiukeren/spider"
