@@ -95,6 +95,7 @@ func SpidePage(siteStruct *model.Site, url1 string) {
 		log.Println(err)
 		return
 	}
+	StoreContent(siteStruct, url1, content)
 
 	reader := bytes.NewReader(content)
 	doc, err := goquery.NewDocumentFromReader(reader)
@@ -123,6 +124,7 @@ func SpidePage(siteStruct *model.Site, url1 string) {
 			//_ = content
 			//log.Println("spidering " + a)
 			//StorePage(siteStruct, urlStructTemp, content)
+
 			StoreContentUrl(siteStruct, a)
 
 			time.Sleep(time.Millisecond * 10)
@@ -132,6 +134,22 @@ func SpidePage(siteStruct *model.Site, url1 string) {
 		}
 	})
 
+}
+
+func StoreContent(siteStruct *model.Site, url1 string, content []byte) {
+
+	count := 0
+	var contentStruct model.Content
+	db.Where("url = ?", url1).First(&contentStruct)
+
+	db.Model(&model.Content{}).Where("url = ?", url1).Count(&count)
+	// p("title", count)
+	if count == 0 {
+		newContent := model.Content{Url: url1, SiteId: siteStruct.ID, Status: 200, Code: 200, Content: content}
+		db.Create(&newContent)
+	} else {
+		db.Where("url = ?", url1).Update("content", content)
+	}
 }
 
 func StoreContentUrl(siteStruct *model.Site, url1 string) {
