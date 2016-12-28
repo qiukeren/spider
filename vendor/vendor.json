@@ -21,6 +21,36 @@
 			"revisionTime": "2016-12-20T10:27:27Z"
 		},
 		{
+			"checksumSHA1": "nzWh/S6C5wVr/WT88uO66Z32ycQ=",
+			"path": "github.com/jinzhu/gorm/dialects/mssql",
+			"revision": "0fbff1e8f0821fc67ef793a9f403beda5ca372b8",
+			"revisionTime": "2016-12-20T10:27:27Z"
+		},
+		{
+			"checksumSHA1": "eECxSkwh0WmhLwaxHfkvcLOWS08=",
+			"path": "github.com/jinzhu/gorm/dialects/mysql",
+			"revision": "0fbff1e8f0821fc67ef793a9f403beda5ca372b8",
+			"revisionTime": "2016-12-20T10:27:27Z"
+		},
+		{
+			"checksumSHA1": "QmQW8snORAputB7/1jFXpsOZa8A=",
+			"path": "github.com/jinzhu/gorm/dialects/postgres",
+			"revision": "0fbff1e8f0821fc67ef793a9f403beda5ca372b8",
+			"revisionTime": "2016-12-20T10:27:27Z"
+		},
+		{
+			"checksumSHA1": "4VZ1gLZHMumRjV3fclS1aX8S1aQ=",
+			"path": "github.com/jinzhu/gorm/dialects/sqlite",
+			"revision": "0fbff1e8f0821fc67ef793a9f403beda5ca372b8",
+			"revisionTime": "2016-12-20T10:27:27Z"
+		},
+		{
+			"checksumSHA1": "aa9zMiZLGUBrPxlZPH+mNQLd95Y=",
+			"path": "github.com/jinzhu/inflection",
+			"revision": "74387dc39a75e970e7a3ae6a3386b5bd2e5c5cff",
+			"revisionTime": "2016-08-17T01:46:01Z"
+		},
+		{
 			"checksumSHA1": "XGlyfQkJLFTrSpbyO1F74Mum7s0=",
 			"path": "github.com/mattn/go-sqlite3",
 			"revision": "e118d4451349065b8e7ce0f0af32e033995363f8",

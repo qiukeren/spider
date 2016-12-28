@@ -1,0 +1,73 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;spider&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../google.golang.org" />
+      <root url="file://$PROJECT_DIR$/../../../publish" />
+      <root url="file://$PROJECT_DIR$/../../../git.starstudio.org" />
+      <root url="file://$PROJECT_DIR$/../../../go4.org" />
+      <root url="file://$PROJECT_DIR$/../../../imgo" />
+      <root url="file://$PROJECT_DIR$/../.." />
+      <root url="file://$PROJECT_DIR$/../../../bitbucket.org" />
+      <root url="file://$PROJECT_DIR$/../../../engo.io" />
+      <root url="file://$PROJECT_DIR$/../../../publish.master" />
+      <root url="file://$PROJECT_DIR$/../../../two" />
+      <root url="file://$PROJECT_DIR$/../../../k8s.io" />
+      <root url="file://$PROJECT_DIR$/../../../collectd.org" />
+      <root url="file://$PROJECT_DIR$/../../../vellus" />
+      <root url="file://$PROJECT_DIR$/../../../discuz" />
+      <root url="file://$PROJECT_DIR$/../../../rsc.io" />
+      <root url="file://$PROJECT_DIR$/../../../bbllive" />
+      <root url="file://$PROJECT_DIR$/../../../fullgc" />
+      <root url="file://$PROJECT_DIR$/../../../launchpad.net" />
+      <root url="file://$PROJECT_DIR$/../../../code.cloudfoundry.org" />
+      <root url="file://$PROJECT_DIR$/../../../all" />
+      <root url="file://$PROJECT_DIR$/../../../code.google.com" />
+      <root url="file://$PROJECT_DIR$/../../../honnef.co" />
+      <root url="file://$PROJECT_DIR$/../../../git.eclipse.org" />
+      <root url="file://$PROJECT_DIR$/../../../speter.net" />
+      <root url="file://$PROJECT_DIR$/../../../golang.org" />
+      <root url="file://$PROJECT_DIR$/../../../clive" />
+      <root url="file://$PROJECT_DIR$/../../../control" />
+      <root url="file://$PROJECT_DIR$/../../../monitor" />
+      <root url="file://$PROJECT_DIR$/../../../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../../../bbs" />
+      <root url="file://$PROJECT_DIR$/../../../opms" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../google.golang.org" />
+      <root url="file://$PROJECT_DIR$/../../../publish" />
+      <root url="file://$PROJECT_DIR$/../../../git.starstudio.org" />
+      <root url="file://$PROJECT_DIR$/../../../go4.org" />
+      <root url="file://$PROJECT_DIR$/../../../imgo" />
+      <root url="file://$PROJECT_DIR$/../.." />
+      <root url="file://$PROJECT_DIR$/../../../bitbucket.org" />
+      <root url="file://$PROJECT_DIR$/../../../engo.io" />
+      <root url="file://$PROJECT_DIR$/../../../publish.master" />
+      <root url="file://$PROJECT_DIR$/../../../two" />
+      <root url="file://$PROJECT_DIR$/../../../k8s.io" />
+      <root url="file://$PROJECT_DIR$/../../../collectd.org" />
+      <root url="file://$PROJECT_DIR$/../../../vellus" />
+      <root url="file://$PROJECT_DIR$/../../../discuz" />
+      <root url="file://$PROJECT_DIR$/../../../rsc.io" />
+      <root url="file://$PROJECT_DIR$/../../../bbllive" />
+      <root url="file://$PROJECT_DIR$/../../../fullgc" />
+      <root url="file://$PROJECT_DIR$/../../../launchpad.net" />
+      <root url="file://$PROJECT_DIR$/../../../code.cloudfoundry.org" />
+      <root url="file://$PROJECT_DIR$/../../../all" />
+      <root url="file://$PROJECT_DIR$/../../../code.google.com" />
+      <root url="file://$PROJECT_DIR$/../../../honnef.co" />
+      <root url="file://$PROJECT_DIR$/../../../git.eclipse.org" />
+      <root url="file://$PROJECT_DIR$/../../../speter.net" />
+      <root url="file://$PROJECT_DIR$/../../../golang.org" />
+      <root url="file://$PROJECT_DIR$/../../../clive" />
+      <root url="file://$PROJECT_DIR$/../../../control" />
+      <root url="file://$PROJECT_DIR$/../../../monitor" />
+      <root url="file://$PROJECT_DIR$/../../../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../../../bbs" />
+      <root url="file://$PROJECT_DIR$/../../../opms" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
