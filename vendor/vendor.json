@@ -15,6 +15,12 @@
 			"revisionTime": "2016-08-31T16:22:11Z"
 		},
 		{
+			"checksumSHA1": "+Gev6nKw5fgbTyPVk6nC/M7knTM=",
+			"path": "github.com/andybalholm/cascadia",
+			"revision": "65919c611220063037b1db8eb334acaf17a6d8ea",
+			"revisionTime": "2016-10-18T13:42:59Z"
+		},
+		{
 			"checksumSHA1": "3ehsf4ICoNBKw96NsC9TsHHUdAo=",
 			"path": "github.com/jinzhu/gorm",
 			"revision": "0fbff1e8f0821fc67ef793a9f403beda5ca372b8",
