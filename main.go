@@ -37,7 +37,7 @@ func main() {
 	log.SetFlags(log.Lshortfile | log.Ltime | log.Ldate)
 	var err error
 	db, err = gorm.Open("sqlite3", "spider.db")
-	db.LogMode(false)
+	db.LogMode(true)
 	if err != nil {
 		panic("failed to connect database")
 	}
@@ -145,15 +145,13 @@ func StoreContent(siteStruct *model.Site, url1 string, content []byte) {
 		newContent := model.Content{Url: url1, SiteId: siteStruct.ID, Status: 200, Code: 200, Content: content}
 		db.Create(&newContent)
 	} else {
-		db.Where("url = ?", url1).Update("content", content)
+		db.Model(model.Content{}).Where("url = ?", url1).Update("content", content)
 	}
 }
 
 func StoreContentUrl(siteStruct *model.Site, url1 string) {
 
 	count := 0
-	var contentStruct model.Content
-	db.Where("url = ?", url1).First(&contentStruct)
 
 	db.Model(&model.Content{}).Where("url = ?", url1).Count(&count)
 	// p("title", count)
