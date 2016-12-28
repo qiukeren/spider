@@ -124,7 +124,7 @@ func SpidePage(siteStruct *model.Site, url1 string) {
 			StoreContentUrl(siteStruct, a)
 
 			map2[url1] = true
-			time.Sleep(time.Millisecond * 100)
+			time.Sleep(time.Millisecond * 10)
 			SpidePage(siteStruct, a)
 		} else {
 			log.Printf("none current url " + site + " " + a)
