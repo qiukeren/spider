@@ -10,7 +10,6 @@ import (
 
 	"bytes"
 	"log"
-	"net/url"
 	"time"
 )
 
@@ -139,8 +138,6 @@ func SpidePage(siteStruct *model.Site, url1 string) {
 func StoreContent(siteStruct *model.Site, url1 string, content []byte) {
 
 	count := 0
-	var contentStruct model.Content
-	db.Where("url = ?", url1).First(&contentStruct)
 
 	db.Model(&model.Content{}).Where("url = ?", url1).Count(&count)
 	// p("title", count)
@@ -162,21 +159,6 @@ func StoreContentUrl(siteStruct *model.Site, url1 string) {
 	// p("title", count)
 	if count == 0 {
 		newContent := model.Content{Url: url1, SiteId: siteStruct.ID, Status: 100, Code: 100}
-		db.Create(&newContent)
-	}
-}
-
-func StoreContent(siteStruct *model.Site, urlStruct *url.URL, content []byte) {
-	url1 := urlStruct.String()
-
-	count := 0
-	var contentStruct model.Content
-	db.Where("url = ?", url1).First(&contentStruct)
-
-	db.Model(&model.Content{}).Where("url = ?", url1).Count(&count)
-	// p("title", count)
-	if count == 0 {
-		newContent := model.Content{Url: url1, SiteId: siteStruct.ID, Content: content, Status: 200, Code: 200}
 		db.Create(&newContent)
 	}
 }
