@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/MouseSun/goprint"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
@@ -12,10 +11,6 @@ import (
 	"log"
 	"time"
 )
-
-func p(title string, c interface{}) {
-	goprint.P(title, c)
-}
 
 var db *gorm.DB
 
@@ -44,8 +39,8 @@ func main() {
 	defer db.Close()
 
 	a, err := StoreGetSite("http://www.duwenzhang.com/wenzhang/shenghuosuibi/20140520/291739.html")
-	p("title", a)
-	p("title", err)
+	P("title", a)
+	P("title", err)
 	if err != nil {
 		log.Println(err)
 		return

@@ -23,6 +23,16 @@ type Site struct {
 
 type Content struct {
 	Model
+	Url      string `gorm:"type:text;"`
+	SiteId   uint64 `gorm:"index"`
+	Encoding string
+	Status   int
+	Code     int
+	Content  []byte
+}
+
+type Body struct {
+	Model
 	Url     string `gorm:"type:text;"`
 	SiteId  uint64 `gorm:"index"`
 	Status  int
