@@ -16,6 +16,9 @@ func Get(urls string) ([]byte, error) {
 	req.Header.Set("User-Agent", "Googlebot/2.1 (+http://www.google.com/bot.html)")
 
 	resp, err := getClient().Do(req)
+        if err != nil {
+                return nil, err
+        }
 
 	tempData, err := ioutil.ReadAll(resp.Body)
 
