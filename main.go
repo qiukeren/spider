@@ -38,7 +38,8 @@ func main() {
 	}
 	defer db.Close()
 
-	array := []string{"http://www.duwenzhang.com/wenzhang/shenghuosuibi/20140520/291739.html",
+	array := []string{
+		"http://www.duwenzhang.com/wenzhang/shenghuosuibi/20140520/291739.html",
 		"http://www.oschina.net/news/80475/bfs-0-5-0",
 		"http://coolshell.cn/articles/17583.html",
 		"http://www.mike.org.cn/articles/some-classic-quotations-1-2/",
