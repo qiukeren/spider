@@ -38,14 +38,28 @@ func main() {
 	}
 	defer db.Close()
 
-	a, err := StoreGetSite("http://www.duwenzhang.com/wenzhang/shenghuosuibi/20140520/291739.html")
+	array := []string{"http://www.duwenzhang.com/wenzhang/shenghuosuibi/20140520/291739.html",
+		"http://www.oschina.net/news/80475/bfs-0-5-0",
+		"http://coolshell.cn/articles/17583.html",
+		"http://www.mike.org.cn/articles/some-classic-quotations-1-2/",
+		"https://segmentfault.com/",
+	}
+	for _, v := range array {
+		GoSpide(v)
+	}
+
+}
+
+func GoSpide(url1 string) {
+	a, err := StoreGetSite(url1)
 	P("title", a)
 	P("title", err)
 	if err != nil {
 		log.Println(err)
 		return
 	}
-	SpidePage(a, "http://www.duwenzhang.com/wenzhang/shenghuosuibi/20140520/291739.html")
+	SpidePage(a, url1)
+
 }
 
 func StoreGetSite(randomUrl string) (*model.Site, error) {
