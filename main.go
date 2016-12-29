@@ -134,7 +134,7 @@ func SpidePage(siteStruct *model.Site, url1 string) {
 			//log.Println("spidering " + a)
 			//StorePage(siteStruct, urlStructTemp, content)
 
-			StoreContentUrl(siteStruct, a)
+			//StoreContentUrl(siteStruct, a)
 
 			time.Sleep(time.Millisecond * 10)
 			SpidePage(siteStruct, a)

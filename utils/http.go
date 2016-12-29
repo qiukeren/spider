@@ -17,13 +17,13 @@ func Get(urls string) ([]byte, error) {
 
 	resp, err := getClient().Do(req)
 
-	defer resp.Body.Close()
 	tempData, err := ioutil.ReadAll(resp.Body)
 
 	if err != nil {
 		return nil, err
 
 	}
+	resp.Body.Close()
 	return tempData, nil
 }
 
