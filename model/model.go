@@ -11,6 +11,13 @@ type Model struct {
 	DeletedAt *time.Time `sql:"index"`
 }
 
+type Log struct {
+	Model
+	Level   string
+	Message string
+	Type    string
+}
+
 type Site struct {
 	Model
 	Name     string

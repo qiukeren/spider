@@ -4,6 +4,7 @@ import (
 	"crypto/tls"
 	"io/ioutil"
 	"net/http"
+	"time"
 )
 
 func Get(urls string) ([]byte, error) {
@@ -16,9 +17,9 @@ func Get(urls string) ([]byte, error) {
 	req.Header.Set("User-Agent", "Googlebot/2.1 (+http://www.google.com/bot.html)")
 
 	resp, err := getClient().Do(req)
-        if err != nil {
-                return nil, err
-        }
+	if err != nil {
+		return nil, err
+	}
 
 	tempData, err := ioutil.ReadAll(resp.Body)
 
@@ -35,6 +36,6 @@ func getClient() *http.Client {
 		TLSClientConfig:    &tls.Config{InsecureSkipVerify: true},
 		DisableCompression: true,
 	}
-	client := &http.Client{Transport: tr}
+	client := &http.Client{Transport: tr, Timeout: 15 * time.Second}
 	return client
 }
