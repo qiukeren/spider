@@ -150,12 +150,25 @@ func StoreContent(siteStruct *model.Site, url1 string, content []byte) {
 	count := 0
 
 	db.Model(&model.Content{}).Where("url = ?", url1).Count(&count)
+	encoding, _ := EncodingTest(&content)
 	// p("title", count)
 	if count == 0 {
-		newContent := model.Content{Url: url1, SiteId: siteStruct.ID, Status: 200, Code: 200, Content: content}
+		newContent := model.Content{
+			Url:      url1,
+			SiteId:   siteStruct.ID,
+			Status:   200,
+			Code:     200,
+			Content:  content,
+			Encoding: encoding,
+		}
 		db.Create(&newContent)
 	} else {
-		db.Model(model.Content{}).Where("url = ?", url1).Update("content", content)
+		db.Model(model.Content{}).Where("url = ?", url1).Update(
+			map[string]interface{}{
+				"content":  content,
+				"encoding": encoding,
+			},
+		)
 	}
 }
 
