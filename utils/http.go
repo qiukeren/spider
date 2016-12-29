@@ -8,11 +8,14 @@ import (
 
 func Get(urls string) ([]byte, error) {
 
-	resp, err := getClient().Get(urls)
+	req, err := http.NewRequest("GET", urls, nil)
 
 	if err != nil {
 		return nil, err
 	}
+	req.Header.Set("User-Agent", "Googlebot/2.1 (+http://www.google.com/bot.html)")
+
+	resp, err := getClient().Do(req)
 
 	defer resp.Body.Close()
 	tempData, err := ioutil.ReadAll(resp.Body)
