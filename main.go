@@ -23,10 +23,10 @@ func init() {
 	var err error
 
 	// db, err = gorm.Open("sqlite3", "spider.db")
-	db, err = gorm.Open("mysql", "spider:spider_pass@/spider?charset=utf8&parseTime=True&loc=Local")
+	db, err = gorm.Open("mysql", "root:spider_pass@tcp(10.0.23.7:3306)/spider?charset=utf8&parseTime=True&loc=Local")
 
 	if err != nil {
-		panic("failed to connect database")
+		panic(err)
 	}
 	//defer db.Close()
 
@@ -50,8 +50,30 @@ func main() {
 		"http://www.oschina.net/news/80475/bfs-0-5-0",
 		"https://my.oschina.net/lujianing/blog/787745",
 		"http://coolshell.cn/articles/17583.html",
+		"http://www.01happy.com/golang-tcp-socket-adhere/",
+		"http://blog.studygolang.com/tag/golang_pkg/",
 		"http://www.mike.org.cn/articles/some-classic-quotations-1-2/",
 		"https://segmentfault.com/",
+		"https://www.zhihu.com/question/27720523",
+		"http://blog.dataman-inc.com/114-shurenyun-huodong/",
+		"http://www.soomal.com/doc/10100005237.htm",
+		"http://www.ruanyifeng.com/blog/2016/05/react_router.html?utm_source=tool.lu",
+		"https://book.douban.com/review/5428330/",
+		"http://www.l99.com/media_index.action",
+		"http://www.dapenti.com/blog/more.asp?name=tupian&id=68524",
+		"http://www.guoxue.com/?category_name=study&paged=3",
+		"http://www.nowamagic.net/librarys/veda/detail/2299",
+		"http://blog.jobbole.com/811/",
+		"http://blog.csdn.net/v_july_v/article/details/7382693",
+		"http://www.cnblogs.com/yuuyuu/p/5180827.html",
+		"http://www.ibm.com/developerworks/cn/linux/l-vim-script-2/",
+		"http://limlee.blog.51cto.com/6717616/1223749",
+		"https://www.zybuluo.com/Gestapo/note/32082",
+		"http://rfyiamcool.blog.51cto.com/",
+		"http://linux.chinaunix.net/techdoc/develop/2007/03/11/952015.shtml",
+		"http://www.saltstack.cn/kb/salt-raet-01/#salt-raet-01",
+		"https://book.douban.com/review/5428330/",
+		"http://highscalability.com/blog/2013/5/13/the-secret-to-10-million-concurrent-connections-the-kernel-i.html",
 	}
 	for _, v := range array {
 		wg.Add(1)
