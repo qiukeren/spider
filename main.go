@@ -3,25 +3,32 @@ package main
 import (
 	"github.com/PuerkitoBio/goquery"
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
+
 	"github.com/qiukeren/spider/model"
 	. "github.com/qiukeren/spider/utils"
 
 	"bytes"
 	"log"
+	"sync"
 	"time"
 )
 
 var db *gorm.DB
+var wg sync.WaitGroup
+var lock sync.Mutex
 
 func init() {
 	var err error
 
-	db, err = gorm.Open("sqlite3", "spider.db")
+	// db, err = gorm.Open("sqlite3", "spider.db")
+	db, err = gorm.Open("mysql", "spider:spider_pass@/spider?charset=utf8&parseTime=True&loc=Local")
+
 	if err != nil {
 		panic("failed to connect database")
 	}
-	defer db.Close()
+	//defer db.Close()
 
 	db.AutoMigrate(&model.Site{})
 	db.AutoMigrate(&model.Url{})
@@ -31,7 +38,7 @@ func init() {
 func main() {
 	log.SetFlags(log.Lshortfile | log.Ltime | log.Ldate)
 	var err error
-	db, err = gorm.Open("sqlite3", "spider.db")
+	//db, err = gorm.Open("sqlite3", "spider.db")
 	db.LogMode(true)
 	if err != nil {
 		panic("failed to connect database")
@@ -41,13 +48,16 @@ func main() {
 	array := []string{
 		"http://www.duwenzhang.com/wenzhang/shenghuosuibi/20140520/291739.html",
 		"http://www.oschina.net/news/80475/bfs-0-5-0",
+		"https://my.oschina.net/lujianing/blog/787745",
 		"http://coolshell.cn/articles/17583.html",
 		"http://www.mike.org.cn/articles/some-classic-quotations-1-2/",
 		"https://segmentfault.com/",
 	}
 	for _, v := range array {
-		GoSpide(v)
+		wg.Add(1)
+		go GoSpide(v)
 	}
+	wg.Wait()
 
 }
 
@@ -60,7 +70,7 @@ func GoSpide(url1 string) {
 		return
 	}
 	SpidePage(a, url1)
-
+	wg.Done()
 }
 
 func StoreGetSite(randomUrl string) (*model.Site, error) {
@@ -93,10 +103,13 @@ func SpidePage(siteStruct *model.Site, url1 string) {
 		map2 = make(map[string]bool)
 	}
 
+	lock.Lock()
 	if _, b := map2[url1]; b {
+		lock.Unlock()
 		return
 	}
 	map2[url1] = true
+	lock.Unlock()
 
 	content, err := Get(url1)
 	if err != nil {
@@ -123,7 +136,7 @@ func SpidePage(siteStruct *model.Site, url1 string) {
 			return
 		}
 
-		if boolean && IsCurrentSite(a, site) {
+		if boolean && IsCurrentSite(a, site, siteStruct.Protocol) {
 
 			// _, err := Get(a)
 			// if err != nil {
