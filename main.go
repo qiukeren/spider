@@ -16,14 +16,20 @@ import (
 )
 
 var db *gorm.DB
-var wg sync.WaitGroup
-var lock sync.Mutex
+
+var mapLock sync.Mutex
+
+// var writeLock sync.Mutex
+// var popLock sync.Mutex
+//var countLock sync.Mutex
+
+var countWg sync.WaitGroup
 
 func init() {
 	var err error
 
-	// db, err = gorm.Open("sqlite3", "spider.db")
-	db, err = gorm.Open("mysql", "root:spider_pass@tcp(10.0.23.7:3306)/spider?charset=utf8&parseTime=True&loc=Local")
+	db, err = gorm.Open("sqlite3", "spider.db")
+	//db, err = gorm.Open("mysql", "root:XXXXXX@tcp(127.0.0.1:3306)/spider?charset=utf8&parseTime=True&loc=Local")
 
 	if err != nil {
 		panic(err)
@@ -36,12 +42,13 @@ func init() {
 }
 
 func main() {
+
 	log.SetFlags(log.Lshortfile | log.Ltime | log.Ldate)
 	var err error
-	//db, err = gorm.Open("sqlite3", "spider.db")
+	//	db, err = gorm.Open("sqlite3", "spider.db")
 	db.LogMode(true)
 	if err != nil {
-		panic("failed to connect database")
+		panic(err)
 	}
 	defer db.Close()
 
@@ -54,6 +61,7 @@ func main() {
 		"http://blog.studygolang.com/tag/golang_pkg/",
 		"http://www.mike.org.cn/articles/some-classic-quotations-1-2/",
 		"https://segmentfault.com/",
+		"http://stackoverflow.com/questions/2635058/ibatis-get-executed-sql",
 		"https://www.zhihu.com/question/27720523",
 		"http://blog.dataman-inc.com/114-shurenyun-huodong/",
 		"http://www.soomal.com/doc/10100005237.htm",
@@ -76,23 +84,39 @@ func main() {
 		"http://highscalability.com/blog/2013/5/13/the-secret-to-10-million-concurrent-connections-the-kernel-i.html",
 	}
 	for _, v := range array {
-		wg.Add(1)
 		go GoSpide(v)
 	}
-	wg.Wait()
+	GoQueue()
+	countWg.Wait()
+}
 
+func GoQueue() {
+	time.Sleep(5 * time.Second)
+	for i := 0; i < 20; i++ {
+		go SingleQueue()
+		countWg.Add(1)
+	}
+}
+
+func SingleQueue() {
+	for {
+		a, err := PopQueue()
+		if err != nil {
+			log.Println(err)
+			continue
+		}
+		GoSpide(a.Url)
+	}
+	countWg.Done()
 }
 
 func GoSpide(url1 string) {
 	a, err := StoreGetSite(url1)
-	P("title", a)
-	P("title", err)
 	if err != nil {
 		log.Println(err)
 		return
 	}
 	SpidePage(a, url1)
-	wg.Done()
 }
 
 func StoreGetSite(randomUrl string) (*model.Site, error) {
@@ -105,8 +129,9 @@ func StoreGetSite(randomUrl string) (*model.Site, error) {
 
 	count := 0
 
+	// countLock.Lock()
 	db.Model(&model.Site{}).Where("name = ?", siteName).Count(&count)
-
+	// countLock.Unlock()
 	if count == 0 {
 		newSite := model.Site{Name: siteName, Url: siteName, Protocol: urlStruct.Scheme}
 		db.Create(&newSite)
@@ -117,21 +142,7 @@ func StoreGetSite(randomUrl string) (*model.Site, error) {
 	return &siteStruct, nil
 }
 
-var map2 map[string]bool
-
 func SpidePage(siteStruct *model.Site, url1 string) {
-
-	if map2 == nil {
-		map2 = make(map[string]bool)
-	}
-
-	lock.Lock()
-	if _, b := map2[url1]; b {
-		lock.Unlock()
-		return
-	}
-	map2[url1] = true
-	lock.Unlock()
 
 	content, err := Get(url1)
 	if err != nil {
@@ -159,23 +170,20 @@ func SpidePage(siteStruct *model.Site, url1 string) {
 		}
 
 		if boolean && IsCurrentSite(a, site, siteStruct.Protocol) {
+			//SpidePage(siteStruct, a)
+			PushQueue(a)
 
-			// _, err := Get(a)
-			// if err != nil {
-			// 	log.Println(err)
-			// 	return
-			// }
-			//_ = content
-			//log.Println("spidering " + a)
-			//StorePage(siteStruct, urlStructTemp, content)
+			// writeLock.Lock()
 
-			//StoreContentUrl(siteStruct, a)
+			// defer writeLock.Unlock()
 
-			time.Sleep(time.Millisecond * 10)
-			SpidePage(siteStruct, a)
-		} else {
-			//log.Printf("none current url " + site + " " + a)
+			db.Model(model.Url{}).Where("url = ?", a).Update(
+				map[string]interface{}{
+					"status": 200,
+				},
+			)
 		}
+
 	})
 
 }
@@ -184,7 +192,10 @@ func StoreContent(siteStruct *model.Site, url1 string, content []byte) {
 
 	count := 0
 
+	// countLock.Lock()
 	db.Model(&model.Content{}).Where("url = ?", url1).Count(&count)
+	// countLock.Unlock()
+
 	encoding, _ := EncodingTest(&content)
 	// p("title", count)
 	if count == 0 {
@@ -196,8 +207,16 @@ func StoreContent(siteStruct *model.Site, url1 string, content []byte) {
 			Content:  content,
 			Encoding: encoding,
 		}
+		// writeLock.Lock()
+
+		// defer writeLock.Unlock()
 		db.Create(&newContent)
+
 	} else {
+		// writeLock.Lock()
+
+		// defer writeLock.Unlock()
+
 		db.Model(model.Content{}).Where("url = ?", url1).Update(
 			map[string]interface{}{
 				"content":  content,
@@ -207,14 +226,37 @@ func StoreContent(siteStruct *model.Site, url1 string, content []byte) {
 	}
 }
 
-func StoreContentUrl(siteStruct *model.Site, url1 string) {
+func PushQueue(url1 string) {
 
 	count := 0
 
-	db.Model(&model.Content{}).Where("url = ?", url1).Count(&count)
-	// p("title", count)
+	// countLock.Lock()
+	db.Model(&model.Url{}).Where("url = ?", url1).Count(&count)
+	// countLock.Unlock()
+
 	if count == 0 {
-		newContent := model.Content{Url: url1, SiteId: siteStruct.ID, Status: 100, Code: 100}
-		db.Create(&newContent)
+		newUrl := model.Url{Url: url1, Status: 0}
+		// writeLock.Lock()
+		// defer writeLock.Unlock()
+		db.Create(&newUrl)
 	}
+
+}
+
+func PopQueue() (urlStruct *model.Url, err error) {
+	urlStruct = &model.Url{}
+	// popLock.Lock()
+	// defer popLock.Unlock()
+	err = db.Model(&model.Url{}).Where("status = ?", 0).First(&urlStruct).Error
+	if err != nil {
+		log.Println(err)
+		return nil, err
+	}
+	db.Model(model.Url{}).Where("url = ?", urlStruct.Url).Update(
+		map[string]interface{}{
+			"status": 100,
+		},
+	)
+
+	return urlStruct, nil
 }
