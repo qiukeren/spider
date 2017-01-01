@@ -30,7 +30,7 @@ type Site struct {
 
 type Content struct {
 	Model
-	Url      string `gorm:"type:text;"`
+	Url      string `gorm:"type:varchar(16000);index"`
 	SiteId   uint64 `gorm:"index"`
 	Encoding string
 	Status   int
