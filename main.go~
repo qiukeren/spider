@@ -16,7 +16,6 @@ import (
 	"log"
 	"net/url"
 	"sync"
-	"fmt"
 	"time"
 	"sync/atomic"
 )
@@ -219,7 +218,6 @@ func StoreContent(siteStruct *model.Site, url1 string, content []byte) {
 
 		// defer writeLock.Unlock()
 		db.Create(&newContent)
-		atomic.AddUint64(&atmicIncr, 1)
 
 	} else {
 		// writeLock.Lock()
@@ -233,7 +231,6 @@ func StoreContent(siteStruct *model.Site, url1 string, content []byte) {
 			},
 		)
 	}
-fmt.Println("==================",atmicIncr)
 }
 
 func PushQueue(url1 string) {

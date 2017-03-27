@@ -35,7 +35,8 @@ type Content struct {
 	Encoding string
 	Status   int
 	Code     int
-	Content  []byte `gorm:"type:mediumblob"`
+	//Content  []byte `gorm:"type:mediumblob"`
+	Content []byte
 }
 
 type Body struct {
@@ -49,6 +50,6 @@ type Body struct {
 
 type Url struct {
 	Model
-	Url    string
+	Url    string `gorm:"index"`
 	Status int
 }
