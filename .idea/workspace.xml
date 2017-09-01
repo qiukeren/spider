@@ -2,6 +2,196 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1394c3a-c0af-43f9-8662-ad9f4a581ab6" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Go_SDK.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmd/encoding/encodingtest.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmd/encoding/spider.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/model.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/MouseSun/goprint/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/MouseSun/goprint/goprint.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/array.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/array_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/bench_array_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/bench_example_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/bench_expand_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/bench_filter_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/bench_iteration_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/bench_property_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/bench_query_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/bench_traversal_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/doc.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/example_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/expand.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/expand_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/filter.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/filter_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/iteration.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/iteration_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/manipulation.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/manipulation_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/property.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/property_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/query.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/query_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/testdata/gotesting.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/testdata/gowiki.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/testdata/metalreview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/testdata/page.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/testdata/page2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/testdata/page3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/traversal.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/traversal_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/type.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/type_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/utilities.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/PuerkitoBio/goquery/utilities_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/andybalholm/cascadia/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/andybalholm/cascadia/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/andybalholm/cascadia/benchmark_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/andybalholm/cascadia/parser.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/andybalholm/cascadia/parser_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/andybalholm/cascadia/selector.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/andybalholm/cascadia/selector_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/License" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/association.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/association_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_create.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_delete.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_query.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_query_preload.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_save.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_system_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_update.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callbacks_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/create_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/customize_column_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/delete_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect_common.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect_mysql.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect_postgres.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect_sqlite3.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialects/mssql/mssql.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialects/mysql/mysql.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialects/postgres/postgres.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialects/sqlite/sqlite.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/embedded_struct_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/errors.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/errors_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/field.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/field_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/interface.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/join_table_handler.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/join_table_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/logger.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/main.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/main_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/migration_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/model.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/model_struct.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/multi_primary_keys_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/pointer_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/polymorphic_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/preload_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/query_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/scaner_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/scope.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/scope_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/search.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/search_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/test_all.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/update_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/utils.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/utils_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/wercker.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/inflection/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/inflection/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/inflection/inflections.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/inflection/inflections_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/PATENTS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/md4/md4.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/md4/md4_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/md4/md4block.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/PATENTS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/atom/atom.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/atom/atom_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/atom/gen.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/atom/table.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/atom/table_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/const.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/doc.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/doctype.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/entity.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/entity_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/escape.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/escape_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/example_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/foreign.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/node.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/node_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/parse.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/parse_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/render.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/render_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/go1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/adoption01.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/adoption02.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/comments01.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/doctype01.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/entities01.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/entities02.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/html5test-com.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/inbody01.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/isindex.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/pending-spec-changes-plain-text-unsafe.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/pending-spec-changes.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/plain-text-unsafe.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/scriptdata01.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/scripted/adoption01.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/scripted/webkit01.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tables01.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests10.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests11.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests12.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests14.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests15.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests16.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests17.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests18.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests19.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests20.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests21.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests22.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests23.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests24.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests25.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests26.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests6.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests7.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests8.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests9.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tests_innerHTML_1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/tricky01.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/webkit01.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/testdata/webkit/webkit02.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/token.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/token_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/vendor.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/GOPATH__spider_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/GOPATH__spider_.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/spider.iml" afterPath="$PROJECT_DIR$/.idea/spider.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,14 +206,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+            <state relative-caret-position="1021">
+              <caret line="120" column="36" lean-forward="true" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
               <folding>
-                <element signature="e#14#269#0" expanded="true" />
+                <element signature="e#14#315#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -31,8 +221,23 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>popup</find>
+      <find>url11</find>
+      <find>golang-tcp-socket-adhere</find>
+      <find>range page1</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main.go" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -41,10 +246,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="43" />
-    <option name="width" value="1400" />
-    <option name="height" value="833" />
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -88,6 +292,18 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Go Application.Unnamed">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="spider" />
@@ -112,25 +328,29 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="43" width="1400" height="833" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39921466" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914772" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -145,33 +365,52 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/main.go</url>
-          <line>53</line>
+          <line>125</line>
           <properties />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/main.go</url>
-          <line>82</line>
+          <line>137</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/main.go</url>
-          <line>105</line>
+          <line>132</line>
           <properties />
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#269#0" expanded="true" />
+            <element signature="e#14#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../go-utils/common/http.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1021">
+          <caret line="120" column="36" lean-forward="true" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
+          <folding>
+            <element signature="e#14#315#0" expanded="true" />
           </folding>
         </state>
       </provider>
